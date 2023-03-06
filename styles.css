@@ -49,11 +49,10 @@ ul li a {
     width: 70vw;
     position: absolute;
     top: 0;
-    right: -200px;
+    right: 400px;
+    display: none;
     background: hsl(236, 13%, 42%);
-    visibility: 0;
-    scale: 0;
-    transition: 0.6s ease;
+    animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .nav-list-container.open {
@@ -62,9 +61,7 @@ ul li a {
     position: absolute;
     top: 0;
     right: 0;
-    scale: 1;
-    visibility: 1;
-    
+    display: block;
 
 }
 
@@ -83,3 +80,14 @@ ul li a {
 }
 
 
+@keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(400px);
+              transform: translateX(400px);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  
