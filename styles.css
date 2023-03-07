@@ -185,13 +185,13 @@ ul li a {
 
 .section-03-card-container .card{
   display: flex;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 
 .section-03-card-container .image{
   margin-right: 30px;
-  flex-basis: 110px;
+  flex: 1;
 }
 
 .section-03-card-container .description{
@@ -218,6 +218,7 @@ ul li a {
 }
 
 .section-03-card-container .text{
+  display: block;
   color: hsl(240, 100%, 5%);
   font-size: 18px;
   font-weight: 900;
@@ -225,7 +226,7 @@ ul li a {
 
 .section-03-card-container .sub-text{
   display: block;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.8;
   color: hsl(236, 13%, 42%);
   font-weight: 500;
