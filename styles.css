@@ -47,7 +47,6 @@ ul {
   top: 0;
   right: 400px;
   display: none;
-  background: hsl(233, 8%, 79%);
   background: hsl(36, 100%, 99%);
   animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
@@ -66,6 +65,8 @@ ul {
   position: relative;
   top: 130px;
   padding-left: 30px;
+  width: auto;
+  /* background: hsl(36, 100%, 99%); */
 }
 
 .menu-list li{
@@ -85,7 +86,9 @@ ul {
   margin-right: 24px;
   position: absolute;
   right: 0;
+  background: hsl(36, 100%, 99%);
 }
+
 
 @keyframes slide-left {
   0% {
@@ -244,3 +247,12 @@ ul {
   font-weight: 500;
 }
 
+
+.background-active{
+  background: hsl(233, 8%, 79%);
+  animation: bgmove 1.3s forwards;
+}
+
+@keyframes bgmove {
+  from {background-color: hsl(36, 100%, 99%);}
+  to {background-color: hsl(233, 8%, 79%);}}
