@@ -11,6 +11,7 @@ body {
   width: 100%;
 }
 
+
 .logo {
   margin-top: 20px;
   margin-left: 20px;
@@ -30,11 +31,6 @@ ul {
   list-style: none;
 }
 
-ul li a {
-  text-decoration: none;
-  line-height: 2.5;
-}
-
 .nav-container {
   width: 100vw;
   position: relative;
@@ -51,7 +47,8 @@ ul li a {
   top: 0;
   right: 400px;
   display: none;
-  background: hsl(236, 13%, 42%);
+  background: hsl(233, 8%, 79%);
+  background: hsl(36, 100%, 99%);
   animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
@@ -62,11 +59,25 @@ ul li a {
   top: 0;
   right: 0;
   display: block;
+  position: fixed;
 }
 
 .menu-list {
   position: relative;
-  top: 100px;
+  top: 130px;
+  padding-left: 30px;
+}
+
+.menu-list li{
+  padding-top: 5px;
+}
+
+.menu-list li a{
+  color: hsl(240, 100%, 5%);
+  line-height: 2.5;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
 }
 
 .menu-close {
