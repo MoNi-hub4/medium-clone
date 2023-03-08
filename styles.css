@@ -8,6 +8,7 @@ body {
   font-family: "Inter", sans-serif;
   /* padding: 20px; */
   font-size: 15px;
+  width: 100%;
 }
 
 .logo {
