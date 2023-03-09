@@ -14,3 +14,10 @@ menuClose.addEventListener('click' , (e) => {
     iconMenuOpen.classList.remove('invisible');
     body.classList.remove('background-active');
 })
+
+document.addEventListener('mouseup', function(e) {
+    var container = document.getElementById('nav-list-container');
+    if (!container.contains(e.target)) {
+        container.style.display = 'none';
+    }
+});
