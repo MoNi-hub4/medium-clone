@@ -15,9 +15,11 @@ menuClose.addEventListener('click' , (e) => {
     body.classList.remove('background-active');
 })
 
-document.addEventListener('mouseup', function(e) {
-    var container = document.getElementById('nav-list-container');
-    if (!container.contains(e.target)) {
-        container.style.display = 'none';
-    }
-});
+
+
+document.addEventListener("click", (e) => {
+    if(e.target.closest('.nav-list-container') || e.target.closest('.icon-menu-open')) return
+    navListContainer.classList.remove('open');
+    iconMenuOpen.classList.remove('invisible');
+    body.classList.remove('background-active');
+})
