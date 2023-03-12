@@ -32,7 +32,7 @@ ul {
 }
 
 .nav-container {
-  width: 100vw;
+  width: auto;
   position: relative;
   height: auto;
   display: flex;
@@ -86,6 +86,10 @@ ul {
   font-size: 20px;
   font-weight: 500;
   text-decoration: none;
+}
+.menu-list li a:hover{
+  color: hsl(5, 85%, 63%);
+
 }
 
 .menu-close {
@@ -144,6 +148,10 @@ ul {
   cursor: pointer;
 }
 
+.section-01 .button:hover{
+  background: hsl(240, 100%, 5%);
+}
+
 .section-01 .button {
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -183,6 +191,11 @@ ul {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.section-02-container p:hover{
+  color: hsl(35, 77%, 62%);
 }
 
 .section-02-container span{
@@ -249,7 +262,13 @@ ul {
   color: hsl(240, 100%, 5%);
   font-size: 18px;
   font-weight: 900;
+  cursor: pointer;
 }
+
+.section-03-card-container .text:hover{
+  color: hsl(5, 85%, 63%);
+}
+
 
 .section-03-card-container .sub-text{
   display: block;
@@ -271,7 +290,17 @@ ul {
 
 
 
-@media screen and (min-width : 1000px){
+@media screen and (min-width : 960px){
+  body{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    
+  }
+  body .body{
+    max-width: 1440px;
+  }
+
   .icon-menu-open{
     display: none;
   }
@@ -289,7 +318,7 @@ ul {
   .menu-list{
     position: inherit;
     top: 0;
-    padding-right: 35px;
+    padding-right: 20px;
   }
 
   .menu-list ul{
@@ -319,8 +348,43 @@ ul {
     display: block;
     width: 100%;
   }
+  .section-01 .sub-section{
+    display: flex;
+  }
+  .section-01 .sub-section p{
+    flex: 1;
+  }
+  .section-01 .sub-section div{
+    flex: 1;
+  }
+
+  .section-01 .text-bright span{
+    font-size: 60px;
+  }
+
+
+
 
   .section-02-container{
     margin-top: 25px;
   }
+
+  .section-03-card-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .section-03-card-container .card{
+    width: 100%;
+  }
+
+  .section-03-card-container .image{
+    flex: revert;
+    flex-basis: 100px;
+  }
+
+  .section-03-card-container .description{
+    padding-right: 30px;
+  }
+
 }
