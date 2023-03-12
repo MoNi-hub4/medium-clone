@@ -339,6 +339,9 @@ ul {
   .desktop{
     display: flex;
   }
+  .section-01{
+    flex-basis: 1540px;
+  }
 
   .section-01 .img-mobile {
     display: none;
@@ -357,13 +360,15 @@ ul {
   .section-01 .sub-section div{
     flex: 1;
   }
+  .section-01 .text-dive{
+    margin-top: 18px;
+    margin-bottom: 18px;
+    /* margin-bottom: 10px; */
+  }
 
   .section-01 .text-bright span{
     font-size: 60px;
   }
-
-
-
 
   .section-02-container{
     margin-top: 25px;
@@ -373,6 +378,7 @@ ul {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-top: 55px;
   }
   .section-03-card-container .card{
     width: 100%;
